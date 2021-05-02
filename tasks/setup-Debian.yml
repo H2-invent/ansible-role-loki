@@ -4,11 +4,6 @@
     path: {{ loki_home_dir }}
     state: directory
 
-- name: LOKI | TASK | Ensure {{ loki_config_dir }} exists.
-  file:
-    path: {{ loki_config_dir }}
-    state: directory
-
 - name: LOKI | TASK | Check if the current version is installed.
   stat:
     path: "{{ loki_home_dir }}/loki-{{ loki_version }}"

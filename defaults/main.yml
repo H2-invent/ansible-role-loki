@@ -7,3 +7,17 @@ loki_home_dir: /opt/loki
 loki_config_dir: /etc/loki
 loki_executable: /usr/local/bin/loki
 loki_executable_options:
+
+# Configuration
+loki_chunk_tables_provisioning_inactive_read_throughput: 0
+loki_chunk_tables_provisioning_inactive_write_throughput: 0
+loki_chunk_tables_provisioning_provisioned_read_throughput: 0
+loki_chunk_tables_provisioning_provisioned_write_throughput: 0
+loki_index_tables_provisioning_inactive_read_throughput: 0
+loki_index_tables_provisioning_inactive_write_throughput: 0
+loki_index_tables_provisioning_provisioned_read_throughput: 0
+loki_index_tables_provisioning_provisioned_write_throughput: 0
+loki_retention_period: 672h
+loki_retention_deletes_enabled: 'true'
+
+loki_max_look_back_period: {{ loki_retention_period }}

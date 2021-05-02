@@ -1,4 +1,7 @@
 ---
-- name: restart loki
+- name: LOKI | HANDLER | Restart loki
+  systemd:
+    name: loki
+    state: restarted
+    daemon_reload: yes
   when: ansible_os_family == 'Debian'
-  systemd: name=loki state=restarted daemon_reload=yes

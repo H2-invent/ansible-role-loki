@@ -1,7 +1,7 @@
 ---
 - name: LOKI | TASK | Ensure {{ loki_home_dir }} exists.
   file:
-    path: {{ loki_home_dir }}
+    path: "{{ loki_home_dir }}"
     state: directory
 
 - name: LOKI | TASK | Check if the current version is installed.

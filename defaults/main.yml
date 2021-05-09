@@ -20,4 +20,4 @@ loki_index_tables_provisioning_provisioned_write_throughput: 0
 loki_retention_period: 672h
 loki_retention_deletes_enabled: 'true'
 
-loki_max_look_back_period: {{ loki_retention_period }}
+loki_max_look_back_period: "{{ loki_retention_period }}"

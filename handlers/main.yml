@@ -1,5 +1,5 @@
 ---
-- name: LOKI | HANDLER | Restart loki
+- name: restart loki
   systemd:
     name: loki
     state: restarted
